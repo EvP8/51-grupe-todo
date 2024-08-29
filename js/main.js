@@ -1,1 +1,1 @@
-console.log('Labas rytas');
+console.log('Labas rytas Lietuva!');
