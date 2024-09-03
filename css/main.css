@@ -1,6 +1,8 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap'); */
+@import '../css/components/header.css';
+@import '../css/components/footer.css';
+@import '../css/components/form-create.css';
 
-@import url('../css/components/header.css');
 @font-face {
   font-family: 'Playwrite';
   src: url('../fonts/Playwrite_AU_SA/static/PlaywriteAUSA-Thin.ttf');
@@ -41,6 +43,5 @@ body {
 }
 
 main {
-  min-height: calc(100H - 9rem);
+  min-height: calc(100vh - 9rem);
 }
-
