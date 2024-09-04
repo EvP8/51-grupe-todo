@@ -1,56 +1,49 @@
-.main-header {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  background-color: #fff;
-  box-shadow: 0 0.2rem 0.4rem #0003;
+/* @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap'); */
+@import '../css/components/header.css';
+@import '../css/components/footer.css';
+@import '../css/components/form-create.css';
+@import '../css/components/list.css';
+@import '../css/components/button.css';
+
+@font-face {
+  font-family: 'Playwrite';
+  src: url('../fonts/Playwrite_AU_SA/static/PlaywriteAUSA-Thin.ttf');
+  font-weight: 100;
+  font-style: normal;
 }
-.main-header > .logo {
-  height: 3rem;
+@font-face {
+  font-family: 'Playwrite';
+  src: url('../fonts/Playwrite_AU_SA/static/PlaywriteAUSA-ExtraLight.ttf');
+  font-weight: 200;
+  font-style: normal;
 }
-.main-header > .stats {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-left: auto;
+@font-face {
+  font-family: 'Playwrite';
+  src: url('../fonts/Playwrite_AU_SA/static/PlaywriteAUSA-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
 }
-.main-header .detail {
-  display: flex;
-  align-items: baseline;
-  gap: 0.2rem;
+@font-face {
+  font-family: 'Playwrite';
+  src: url('../fonts/Playwrite_AU_SA/static/PlaywriteAUSA-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
 }
-.main-header .label {
-  display: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 0.8rem;
-  text-transform: uppercase;
+
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
-.main-header .value {
+
+body {
   font-family: Playwrite, cursive;
-  font-weight: normal;
-  font-size: 1rem;
-}
-.main-header .btn > .icon + .text {
-  display: none;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-@media (min-width: 28rem) {
-  .main-header .btn > .icon + .text {
-    display: inline;
-  }
-}
-
-@media (min-width: 48rem) {
-  .main-header {
-    gap: 3rem;
-  }
-  .main-header .label {
-    display: block;
-  }
+main {
+  min-height: calc(100vh - 9rem);
 }
